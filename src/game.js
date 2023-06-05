@@ -1,8 +1,7 @@
 import TileMap from "./tileMap.js";
 
-
 const tileSize = 32;
-const velocity = 2;
+let velocity = 2;
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext('2d');
 const tileMap = new TileMap(tileSize);
@@ -82,3 +81,5 @@ const loadPage = document.getElementById('loadPage');
 loadPage.addEventListener('click', () => {
     location.reload();
 })
+
+
