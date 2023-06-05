@@ -76,7 +76,7 @@ function drawGameEnd() {
 tileMap.setCanvasSize(canvas);
 setInterval(gameLoop, 1000 / 75);
 
-const loadPage = document.getElementById('loadPage');
+const loadPage = document.getElementById("loadPage");
 
 loadPage.addEventListener('click', () => {
     location.reload();
