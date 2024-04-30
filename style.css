@@ -8,6 +8,54 @@ body{
     background: rgb(0, 0, 0);
 }
 
+body .instruction{ 
+    width: 400px;
+    height: 355px;
+    text-align: justify;
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 2rem;
+    border-radius: 4px;
+    display: none;
+}
+body .instruction .content-instruction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .instruction .content-instruction img{ 
+    width: 250px;
+    margin: auto;
+}
+
+body .instruction .content-instruction button{
+    display: block;
+    border: none;
+    width: 100px;
+    height: 40px;
+    padding: 5px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color:  rgb(70, 148, 70);
+    color: white;
+    border: solid rgb(6, 173, 6);
+}
+body .instruction  button:hover{
+    cursor: pointer;
+    background: rgb(6, 173, 6);
+    border: 3px solid rgb(70, 148, 70);
+}
+
+
 #gameCanvas{
     box-shadow: 10px 10px 20px black;
 }
@@ -25,7 +73,6 @@ body{
 }
 
 #loadPage{
-    margin: 20px;
     padding: 10px 30px;
     background-color: yellow;
     border: none;
@@ -33,6 +80,30 @@ body{
     font-weight: 900;
     font-size: 16px;
     color: blue;
+    cursor: pointer;
+}
+
+body .container-btns{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+
+body .container-btns #btn-instruction{
+    animation: shake 2s ease 3; 
+    animation-delay: 5s;
+    cursor: pointer;
 }
 
 footer p{

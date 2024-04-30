@@ -9,12 +9,31 @@
     <title>Pac-man_Game</title>
 </head>
 <body>
+    <div class="instruction">
+        <div class="content-instruction">
+            <p>
+                <b>Instrucciones:</b> Controla a Pac-Man utilizando las teclas de dirección para moverlo por el laberinto. Tu objetivo es comer todos los puntos mientras
+                evitas ser atrapado por los fantasmas. ¡Recoge las frutas para puntos extra y busca los poderes que te permitirán devorar a los fantasmas temporalmente.
+                <b>Nota: Solo disponible en laptops y desktops</b>
+            </p>
+            <img src="/images/directionals.png" alt="">
+            <button id="close">Listo</button>
+        </div>
+    </div>
     <div class="pacman-Image">
         <img src="./images/pac-man-logo.jpg" alt="pacmanIMG">
     </div>
     <canvas id="gameCanvas"></canvas>
 </body>
-<button id="loadPage">Volver a intentar</button>
+
+
+<div class="container-btns">
+    <button id="loadPage">Volver a intentar</button>
+    <button id="btn-instruction">
+        <img src="/images/informacion.png" alt="" width="30px">
+    </button>
+</div>
+
 <footer>
     <p>©Luis Diego Cantillo Meza</p>
 </footer>

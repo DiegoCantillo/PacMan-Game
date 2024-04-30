@@ -77,9 +77,19 @@ tileMap.setCanvasSize(canvas);
 setInterval(gameLoop, 1000 / 75);
 
 const loadPage = document.getElementById("loadPage");
+const btnInstruction = document.getElementById("btn-instruction");
+const closeModal = document.getElementById('close');
 
 loadPage.addEventListener('click', () => {
     location.reload();
 })
+const modalInstructions = document.querySelector('.instruction');
 
+btnInstruction.addEventListener('click', () => {
+    modalInstructions.style.display = 'block'
+})
+
+closeModal.addEventListener('click', ()=> {
+    modalInstructions.style.display = 'none';
+})
 
